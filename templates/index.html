@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudyVault</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <div class="hero">
+
+    <div class="hero-text">
+        <h1>☁️ StudyVault</h1>
+        <p>Securely store, search and access your academic files anywhere.</p>
+    </div>
+
+    
+    <lottie-player
+        src="https://assets9.lottiefiles.com/packages/lf20_tfb3estd.json"
+        background="transparent"
+        speed="1"
+        style="width: 600px; height: 600px;"
+        loop
+        autoplay>
+    </lottie-player>
+
+</div>
+
+    <div class="cards">
+
+        <a href="/upload" class="card">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <br>
+            Upload File
+        </a>
+
+        <a href="/files" class="card">
+            <i class="fa-solid fa-folder-open"></i>
+            <br>
+            View Files
+        </a>
+
+        <a href="/search" class="card">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <br>
+            Search Files
+        </a>
+
+    </div>
+</body>
+</html>
