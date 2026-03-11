@@ -48,15 +48,25 @@ The application demonstrates how cloud services and modern backend technologies 
 ## Architecture
 
 User uploads document
+
 ↓
+
 Flask backend processes request
+
 ↓
+
 File stored in AWS S3
+
 ↓
+
 AWS Textract extracts text from document
+
 ↓
+
 Extracted text stored for searching
+
 ↓
+
 User can search documents by keywords
 
 ---
