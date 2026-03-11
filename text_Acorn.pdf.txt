@@ -1,0 +1,26 @@
+Dear Hiring Manager,
+I am excited to apply for the Software Engineering Intern position at Acorns. I've long
+admired Acorns' mission to empower everyday investors by making financial wellness
+accessible and intuitive-a mission that deeply resonates with me both personally and
+professionally I'm currently pursuing a Master's in Computer Science with a strong
+academic record, and I bring hands-on experience in building full-stack software and
+automated engineering workflows that deliver real impact.
+In my recent internship at Eli Lilly, I designed and developed an Al-powered web
+application that reduced manual review time by 40% by automatically processing and
+summarizing meeting transcripts. I collaborated closely with product stakeholders to
+translate user needs into high-quality features, focusing on usability and measurable
+impact. This experience strengthened my ability to think about systems holistically-from
+backend logic to front-end experience.
+Prior to that, at Adobe, I led performance and automation efforts for critical rendering
+libraries, improving responsiveness by over 30%. I developed and validated test workflows
+and performance profiles across platforms, which deepened my engineering rigor and
+attention to detail.
+I'm particularly excited about this internship at Acorns because it offers the chance to
+contribute to real product features that have everyday financial impact for millions of
+users. I'm eager to learn from experienced engineers, apply my skills in a product-driven
+environment, and grow as a developer who builds reliable, maintainable, and user-centric
+software.
+Thank you for your time and consideration. I would be thrilled to bring my passion for
+engineering, curiosity for learning, and dedication to quality to Acorns' Engineering team.
+Sincerely,
+Diya Singh

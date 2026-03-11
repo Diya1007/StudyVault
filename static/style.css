@@ -1,9 +1,15 @@
+.title {
+    border-bottom: 3px solid #0e0e0f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     height: 100vh;
 
-    
+    background: linear-gradient(to right, #fff9c4, #ffffff);
 }
 
 .main{
@@ -88,4 +94,37 @@ lottie-player{
 .hero-text p {
     font-size: 18px;
     color: #555;
+}
+
+.upload-container{
+    text-align:center;
+    margin:120px auto;
+    width:400px;
+    background:rgb(230, 227, 227);
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.upload-container h2{
+    font-size: 40px;
+}
+
+.upload-container button{
+    font-size: 18px;
+    padding: 15px 25px;
+}
+
+.upload-container a{
+    font-size: 18px;
+}   
+li{
+    margin: 10px 0;
+}
+.download-btn{
+    margin-left: 30px;
+}
+.delete-btn{
+    margin-left: 20px;
+    color: red;
 }

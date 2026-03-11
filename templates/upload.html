@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>Upload File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
+<div class="upload-container">
 <h2>Upload Document</h2>
 
 <form action="/upload" method="POST" enctype="multipart/form-data">
@@ -12,8 +13,8 @@
     <br><br>
     <button type="submit">Upload</button>
 </form>
-
+<br>
 <a href="/">Back</a>
-
+</div>
 </body>
 </html>

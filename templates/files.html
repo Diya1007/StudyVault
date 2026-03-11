@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Files</title>
+    <title>View Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
+
+<div class="upload-container">
 
 <h2>Uploaded Files</h2>
 
 <ul>
-    <li>
-        notes.pdf
-        <a href="/download/notes.pdf">Download</a>
-    </li>
 
-    <li>
-        assignment.pdf
-        <a href="/download/assignment.pdf">Download</a>
-    </li>
+{% for file in files %}
+
+<li>
+    {% if file.endswith('.pdf') %}
+📝
+{% elif file.endswith('.doc') or file.endswith('.docx') %}
+📄
+{% elif file.endswith('.png') or file.endswith('.jpg') %}
+🖼️
+{% else %}
+📁
+{% endif %}
+
+    <a href="/download/{{ file }}" class="download-btn">⬇ {{ file }}  </a>
+    <a href="/delete/{{ file }}" class="delete-btn"
+    onclick="return confirm('Are you sure you want to delete this file?');">🗑 </a>
+</li>
+
+{% endfor %}
+
 </ul>
 
+<br>
+
 <a href="/">Back</a>
+
+</div>
 
 </body>
 </html>

@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search Files</title>
+<title>Search Files</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
+
+<div class="upload-container">
 
 <h2>Search Documents</h2>
 
-<form action="/search" method="GET">
-    <input type="text" name="query" placeholder="Enter keyword">
-    <button type="submit">Search</button>
+<form method="POST">
+
+<input type="text" name="keyword" placeholder="Enter keyword">
+
+<br><br>
+
+<button type="submit">Search</button>
+
 </form>
 
+<br>
+
+{% if results %}
+
+<h3>Results</h3>
+
+<ul>
+
+{% for file in results %}
+
+<li>
+    <a href="/download/{{ file }}" class="download-btn">⬇ {{file}}</a></li>
+
+{% endfor %}
+
+</ul>
+
+{% endif %}
+
+<br>
+
 <a href="/">Back</a>
+
+</div>
 
 </body>
 </html>
