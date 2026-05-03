@@ -73,6 +73,5 @@ User can search documents by keywords
 
 ## Deployment
 
-The application is deployed on a cloud server using Docker containers. An EC2 instance run the container and expose the application to the internet.
-
+The application is deployed on a cloud server using Docker containers.
 ---
