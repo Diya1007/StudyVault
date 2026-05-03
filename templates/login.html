@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>StudyVault Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="split-login">
+
+    <div class="login-left">
+
+        <div class="overlay-shape shape1"></div>
+        <div class="overlay-shape shape2"></div>
+
+        <div class="hero-content">
+            <h1>Welcome to <br>StudyVault</h1>
+            <p>Your secure student portal for academic documents.</p>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" class="student-img">
+        </div>
+
+    </div>
+
+    <div class="login-right">
+
+        <div class="login-card">
+
+            <h2>Student Login</h2>
+
+            <form method="POST" action="/login">
+
+                <input type="email" name="email"
+                placeholder="University Email"
+                pattern=".+@.+\.edu"
+                required>
+
+                <input type="password" name="password"
+                placeholder="Password"
+                required>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
